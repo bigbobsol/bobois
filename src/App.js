@@ -30,7 +30,8 @@ function MobileScreen() {
                 <TextSection />
                 <ImageSection />
                 <GenerateSection />
-            </div>       
+            </div>
+            <PoweredFooter />       
         </div>
     )
 }
