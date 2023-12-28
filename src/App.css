@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 7% 15% 5% 15%;
+    font-family: 'Inter';
+    background-color: #E7DFC7;
+    color: #D15F3C;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app {
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 90%;
+    padding-bottom: 7%;
+}
+
+p {
+    font-size: 0.9vw;
+    font-weight: 400;
+}
+
+.list {
+    font-size: 1.2vw;
+    line-height: 150%;  
+}
+
+.input {
+    margin-bottom: 2%;
+
+    background-color: #E7DFC7;
+    border: 1.5px solid #D15F3C;
+    border-radius: 8px;
+    color: #D15F3C;
+    cursor:pointer;
+    font-size:1vw;
+    font-family: 'inter';
+    width: 45%;
+    height: 55%;
+}
+
+::placeholder {
+    color: #D15F3C;
+    opacity: 0.8; /* Firefox */
   }
+
+.submit_button {
+    background-color: #D15F3C;
+    color: #E7DFC7;
+    border:none;
+    cursor:pointer;
+    font-size:1vw;
+    font-family: 'inter';
+    transition:all .25s ease-in-out;
+    width: 45%;
+    height: 55%;
+    border-radius: 8px;
+    margin-bottom: 2%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.image_right {
+    width: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.output-image {
+    width: 75%;
+    float: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+    text-align: center;
+}
+
+.hide {
+    visibility: hidden;
 }

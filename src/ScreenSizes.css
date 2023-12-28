@@ -1,0 +1,232 @@
+/* Default styles that apply to all screen sizes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 7% 15% 5% 15%;
+    font-family: 'Inter';
+    background-color: #E7DFC7;
+    color: #D15F3C;
+}
+
+.app {
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 4vw;
+    font-weight: 600;
+    line-height: 90%;
+    padding-bottom: 7%;
+}
+
+p {
+    font-size: 0.9vw;
+    font-weight: 400;
+}
+
+.list_text {
+    font-size: 1.2vw;
+    padding-left: 5%;
+}
+
+.list {
+    font-size: 1.2vw;
+    line-height: 150%;  
+}
+
+.input {
+    margin-bottom: 2%;
+
+    background-color: #E7DFC7;
+    border: 1.5px solid #D15F3C;
+    border-radius: 10px;
+    color: #D15F3C;
+    cursor:pointer;
+    font-size:1vw;
+    font-family: 'inter';
+    width: 55%;
+    height: 60%;
+}
+
+::placeholder {
+    color: #D15F3C;
+    opacity: 0.8; /* Firefox */
+    text-align: center;
+  }
+
+.submit_button {
+    background-color: #D15F3C;
+    color: #E7DFC7;
+    border:none;
+    cursor:pointer;
+    font-size:1vw;
+    font-family: 'inter';
+    transition:all .25s ease-in-out;
+    width: 55%;
+    height: 60%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+.image_right {
+    width: auto;
+}
+
+.output-image {
+    width: 75%;
+    float: right;
+}
+
+.footer {
+    text-align: center;
+}
+
+.hide {
+    visibility: hidden;
+}
+  
+  /* Styles for screens with a maximum width of 767 pixels (e.g., mobile phones) */
+  @media only screen and (max-width: 767px) {
+    body {
+        margin: 17% 7% 5% 7%;
+        font-family: 'Inter';
+        background-color: #E7DFC7;
+        color: #D15F3C;
+    }
+    
+    .app {
+        height: 79vh;
+        display: flex;
+        flex-direction: space-between;
+    }
+    
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    h1 {
+        font-size: 10vw;
+        font-weight: 600;
+        line-height: 90%;
+        padding-bottom: 4%;
+    }
+    
+    p {
+        font-size: 3vw;
+        font-weight: 400;
+    }
+
+    .list_text {
+        font-size: 3.5vw;
+        padding-left: 5%;
+        line-height: 135%;
+    }
+    
+    .list {
+        font-size: 1.4vw;
+        line-height: 225%;
+        text-align: left;
+        width: 65%;
+    }
+    
+    .input {
+        margin-bottom: 2%;
+    
+        background-color: #E7DFC7;
+        border: 1.5px solid #D15F3C;
+        border-radius: 10px;
+        color: #D15F3C;
+        cursor:pointer;
+        font-size:3.5vw;
+        font-family: 'inter';
+        width: 65%;
+        height: 65%;
+    }
+    
+    ::placeholder {
+        color: #D15F3C;
+        opacity: 0.8; /* Firefox */
+      }
+    
+    .submit_button {
+        background-color: #D15F3C;
+        color: #E7DFC7;
+        border:none;
+        cursor:pointer;
+        font-size:3.5vw;
+        font-family: 'inter';
+        transition:all .25s ease-in-out;
+        width: 65%;
+        height: 65%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+    }
+    
+    .image_right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .text_upper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+
+    .text_lower {
+        padding-top: 5%;
+        text-align: center;
+    }
+    
+    .output-image {
+        width: 85%;
+        float: none;
+    }
+    
+    .footer {
+        text-align: center;
+    }
+    
+    .hide {
+        visibility: hidden;
+    }
+  }
+  
+  /* Styles for screens with a minimum width of 768 pixels and a maximum width of 1023 pixels (e.g., tablets) */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .your-component {
+      background-color: lightgreen;
+      font-size: 18px;
+    }
+  }
+  
+  /* Styles for screens with a minimum width of 1024 pixels (e.g., laptops and desktops) */
+  @media only screen and (min-width: 1024px) {
+  }
+  
