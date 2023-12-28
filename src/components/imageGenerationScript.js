@@ -19,7 +19,7 @@ export function ImageGenerationScript() {
             textOutput.classList.remove("hide")
             document.querySelector("#text-output").textContent = "LOADING..."
 
-            fetch('http://localhost:1234/image', {
+            fetch('https://sleepy-frog-wetsuit.cyclic.app/api/projects', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
