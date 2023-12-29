@@ -11,8 +11,8 @@ export function ImageGenerationScript() {
           };
           if (nftID.value.length === 0 || nftID.value > 4999) {
             textOutput.classList.remove("hide")
-            console.log("Submission was empty. Please input your quekz ID")
-            document.querySelector("#text-output").textContent = "PLEASE INPUT A VALID QUEKZ ID"
+            console.log("Submission was empty. Please input your datcat ID")
+            document.querySelector("#text-output").textContent = "PLEASE INPUT A VALID DATCAT ID"
           };
 
           if (nftID.value.length > 0 && nftID.value <= 4999) {
@@ -50,7 +50,7 @@ export function ImageGenerationScript() {
               });
               updateButton.id = "testButton"
             link.href = URL.createObjectURL(blob);
-            link.download = "christmas_quekz.png";
+            link.download = "datcat_cheers_sticker.png";
             })
             .catch(console.error);
 

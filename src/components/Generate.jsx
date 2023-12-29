@@ -12,7 +12,7 @@ function GenerateSection() {
                             />
                             <br/>
                             <a 
-                                href="https://media.discordapp.net/attachments/1185256400906104923/1190260080487186433/Datcat_Showcase.png" 
+                                href="https://media.discordapp.net/attachments/1185256400906104923/1190263461817634856/Datcat_Showcase.png" 
                                 id="link"
                                 alt='outputImage'>
                             </a>

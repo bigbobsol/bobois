@@ -5,7 +5,7 @@ function ImageSection() {
                     className='output-image' 
                     id='output' 
                     alt='outputImage'
-                    src='https://media.discordapp.net/attachments/1185256400906104923/1190260080487186433/Datcat_Showcase.png'
+                    src='https://media.discordapp.net/attachments/1185256400906104923/1190263461817634856/Datcat_Showcase.png'
                     draggable='false'/>
                 </div>
 )
