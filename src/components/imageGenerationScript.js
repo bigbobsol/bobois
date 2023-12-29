@@ -9,13 +9,13 @@ export function ImageGenerationScript() {
           const postData = {
             "nft_id": nftID.value
           };
-          if (nftID.value.length === 0 || nftID.value > 4500) {
+          if (nftID.value.length === 0 || nftID.value > 4999) {
             textOutput.classList.remove("hide")
             console.log("Submission was empty. Please input your quekz ID")
             document.querySelector("#text-output").textContent = "PLEASE INPUT A VALID QUEKZ ID"
           };
 
-          if (nftID.value.length > 0 && nftID.value <= 4500) {
+          if (nftID.value.length > 0 && nftID.value <= 4999) {
             textOutput.classList.remove("hide")
             document.querySelector("#text-output").textContent = "LOADING..."
 
