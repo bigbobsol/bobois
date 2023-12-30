@@ -46,6 +46,7 @@ export function ImageGenerationScript(e) {
             changeImage.src = data
             textOutput.classList.add("hide");
             nftID.classList.add("hide");
+            chosenStyle.classList.add("hide");
 
             fetch(data)
             .then(response => response.blob())
